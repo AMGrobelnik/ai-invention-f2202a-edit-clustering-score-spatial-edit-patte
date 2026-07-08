@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "description": "Mini demo data for ECS vs Jaccard near-duplicate detection experiment",
+    "n_pairs": 25,
+    "pair_types": [
+      "near_dup",
+      "hard_neg",
+      "random"
+    ],
+    "features": [
+      "pair_type",
+      "label",
+      "jaccard",
+      "ecs",
+      "edit_count",
+      "edit_count_norm",
+      "edit_span_frac",
+      "longest_run"
+    ]
+  },
+  "examples": [
+    {
+      "pair_type": "near_dup",
+      "label": 1,
+      "jaccard": 0.4866,
+      "ecs": 4.9126,
+      "edit_count": 4,
+      "edit_count_norm": 0.0142,
+      "edit_span_frac": 0.2571,
+      "longest_run": 0.1277
+    },
+    {
+      "pair_type": "near_dup",
+      "label": 1,
+      "jaccard": 0.4661,
+      "ecs": 10.1435,
+      "edit_count": 4,
+      "edit_count_norm": 0.0122,
+      "edit_span_frac": 0.3293,
+      "longest_run": 0.2683
+    },
+    {
+      "pair_type": "near_dup",
+      "label": 1,
+      "jaccard": 0.5879,
+      "ecs": 0.0,
+      "edit_count": 2,
+      "edit_count_norm": 0.0063,
+      "edit_span_frac": 0.1234,
+      "longest_run": 0.1781
+    },
+    {
+      "pair_type": "near_dup",
+      "label": 1,
+      "jaccard": 0.6213,
+      "ecs": 2.9613,
+      "edit_count": 3,
+      "edit_count_norm": 0.0097,
+      "edit_span_frac": 0.1153,
+      "longest_run": 0.1494
+    },
+    {
+      "pair_type": "near_dup",
+      "label": 1,
+      "jaccard": 0.4338,
+      "ecs": 3.8385,
+      "edit_count": 5,
+      "edit_count_norm": 0.0179,
+      "edit_span_frac": 0.3054,
+      "longest_run": 0.1786
+    },
+    {
+      "pair_type": "near_dup",
+      "label": 1,
+      "jaccard": 0.4987,
+      "ecs": 10.5091,
+      "edit_count": 3,
+      "edit_count_norm": 0.0101,
+      "edit_span_frac": 0.1852,
+      "longest_run": 0.2458
+    },
+    {
+      "pair_type": "near_dup",
+      "label": 1,
+      "jaccard": 0.6389,
+      "ecs": 0.892,
+      "edit_count": 3,
+      "edit_count_norm": 0.01,
+      "edit_span_frac": 0.1355,
+      "longest_run": 0.097
+    },
+    {
+      "pair_type": "near_dup",
+      "label": 1,
+      "jaccard": 0.5857,
+      "ecs": 4.5767,
+      "edit_count": 3,
+      "edit_count_norm": 0.0096,
+      "edit_span_frac": 0.1608,
+      "longest_run": 0.1529
+    },
+    {
+      "pair_type": "near_dup",
+      "label": 1,
+      "jaccard": 0.6413,
+      "ecs": 1.5611,
+      "edit_count": 5,
+      "edit_count_norm": 0.0163,
+      "edit_span_frac": 0.1471,
+      "longest_run": 0.1013
+    },
+    {
+      "pair_type": "near_dup",
+      "label": 1,
+      "jaccard": 0.4729,
+      "ecs": 7.6262,
+      "edit_count": 5,
+      "edit_count_norm": 0.0158,
+      "edit_span_frac": 0.3312,
+      "longest_run": 0.2208
+    },
+    {
+      "pair_type": "hard_neg",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 21.6932,
+      "edit_count": 17,
+      "edit_count_norm": 0.0603,
+      "edit_span_frac": 0.867,
+      "longest_run": 0.3652
+    },
+    {
+      "pair_type": "hard_neg",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 19.1041,
+      "edit_count": 24,
+      "edit_count_norm": 0.0822,
+      "edit_span_frac": 0.9366,
+      "longest_run": 0.2534
+    },
+    {
+      "pair_type": "hard_neg",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 10.8704,
+      "edit_count": 21,
+      "edit_count_norm": 0.064,
+      "edit_span_frac": 0.8659,
+      "longest_run": 0.2683
+    },
+    {
+      "pair_type": "hard_neg",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 36.3551,
+      "edit_count": 19,
+      "edit_count_norm": 0.0562,
+      "edit_span_frac": 0.8166,
+      "longest_run": 0.3669
+    },
+    {
+      "pair_type": "hard_neg",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 70.4174,
+      "edit_count": 8,
+      "edit_count_norm": 0.025,
+      "edit_span_frac": 0.6172,
+      "longest_run": 0.7625
+    },
+    {
+      "pair_type": "random",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 19.3109,
+      "edit_count": 11,
+      "edit_count_norm": 0.0331,
+      "edit_span_frac": 0.8825,
+      "longest_run": 0.3133
+    },
+    {
+      "pair_type": "random",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 57.1146,
+      "edit_count": 7,
+      "edit_count_norm": 0.023,
+      "edit_span_frac": 0.6213,
+      "longest_run": 0.7508
+    },
+    {
+      "pair_type": "random",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 30.2757,
+      "edit_count": 10,
+      "edit_count_norm": 0.031,
+      "edit_span_frac": 0.7307,
+      "longest_run": 0.5139
+    },
+    {
+      "pair_type": "random",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 79.3168,
+      "edit_count": 4,
+      "edit_count_norm": 0.0137,
+      "edit_span_frac": 0.5188,
+      "longest_run": 0.9418
+    },
+    {
+      "pair_type": "random",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 20.4801,
+      "edit_count": 9,
+      "edit_count_norm": 0.0276,
+      "edit_span_frac": 0.8144,
+      "longest_run": 0.3742
+    },
+    {
+      "pair_type": "random",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 75.4986,
+      "edit_count": 4,
+      "edit_count_norm": 0.012,
+      "edit_span_frac": 0.5196,
+      "longest_run": 0.8916
+    },
+    {
+      "pair_type": "random",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 70.4258,
+      "edit_count": 5,
+      "edit_count_norm": 0.0158,
+      "edit_span_frac": 0.5741,
+      "longest_run": 0.8202
+    },
+    {
+      "pair_type": "random",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 46.622,
+      "edit_count": 6,
+      "edit_count_norm": 0.0199,
+      "edit_span_frac": 0.8904,
+      "longest_run": 0.6047
+    },
+    {
+      "pair_type": "random",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 5.2341,
+      "edit_count": 12,
+      "edit_count_norm": 0.042,
+      "edit_span_frac": 0.9878,
+      "longest_run": 0.2378
+    },
+    {
+      "pair_type": "random",
+      "label": 0,
+      "jaccard": 0.0,
+      "ecs": 35.7684,
+      "edit_count": 6,
+      "edit_count_norm": 0.0207,
+      "edit_span_frac": 0.6431,
+      "longest_run": 0.6966
+    }
+  ]
+}

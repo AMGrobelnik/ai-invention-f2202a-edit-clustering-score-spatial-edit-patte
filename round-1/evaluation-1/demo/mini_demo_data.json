@@ -1,0 +1,172 @@
+{
+  "pairs": [
+    {
+      "text1": "Democracy is a system of government in which power is vested in the people who exercise that power directly or through elected representatives. The principles of democracy include free and fair elections rule of law protection of civil liberties and respect for human rights. Ancient Athens is often cited as the birthplace of democratic principles. Modern democracies take various forms including presidential and parliamentary systems. Voter participation is considered essential to healthy democratic governance.",
+      "text2": "Democratic theory encompasses political science philosophy and sociology perspectives on how democracy functions and should function. Theorists debate the proper scope of democracy including how much direct participation citizens should have versus representative government. Deliberative democracy emphasizes rational discourse and public reasoning in political decision making. Some theorists argue that economic inequality threatens genuine democratic participation. The relationship between democracy and individual rights remains a central topic of scholarly debate.",
+      "label": 0,
+      "pair_type": "hard_neg",
+      "avg_words": 72
+    },
+    {
+      "text1": "Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. It introduces concepts such as wave-particle duality superposition and entanglement. The uncertainty principle states that certain pairs of physical properties cannot both be precisely known at the same time. Schrodinger equation describes how the quantum state of a physical system changes over time. Quantum mechanics underpins modern technologies such as semiconductors lasers and medical imaging devices.",
+      "text2": "Quantum mechanics is a fundamental theory in physics that provides a Quantum computing harnesses the principles of quantum mechanics to process information in fundamentally different ways than classical computers. such as wave-particle duality superposition and entanglement. The uncertainty principle states that certain pairs of physical properties cannot both be precisely known at the same time. Schrodinger equation describes how the quantum state of a physical system changes over time. Quantum mechanics underpins modern technologies such as semiconductors lasers and medical imaging devices.",
+      "label": 1,
+      "pair_type": "near_dup",
+      "avg_words": 82
+    },
+    {
+      "text1": "Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. It introduces concepts such as wave-particle duality superposition and entanglement. The uncertainty principle states that certain pairs of physical properties cannot both be precisely known at the same time. Schrodinger equation describes how the quantum state of a physical system changes over time. Quantum mechanics underpins modern technologies such as semiconductors lasers and medical imaging devices.",
+      "text2": "Quantum computing harnesses the principles of quantum mechanics to process information in fundamentally different ways than classical computers. Quantum bits or qubits can exist in superposition of states allowing parallel computation. Quantum entanglement enables correlations between qubits that have no classical equivalent. Quantum algorithms such as Shors algorithm can factor large numbers exponentially faster than classical methods. Building practical quantum computers requires maintaining coherence and minimizing decoherence from environmental noise.",
+      "label": 0,
+      "pair_type": "hard_neg",
+      "avg_words": 76
+    },
+    {
+      "text1": "The rate of photosynthesis depends on several environmental factors including light intensity temperature and carbon dioxide concentration. Higher light intensity generally increases the rate up to a saturation point. Temperature affects the enzyme-controlled reactions of the Calvin cycle. Carbon dioxide concentration is often the limiting factor in natural environments. Plants have evolved various adaptations to optimize photosynthetic efficiency under different conditions.",
+      "text2": "Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. It introduces concepts such as wave-particle duality superposition and entanglement. The uncertainty principle states that certain pairs of physical properties cannot both be precisely known at the same time. Schrodinger equation describes how the quantum state of a physical system changes over time. Quantum mechanics underpins modern technologies such as semiconductors lasers and medical imaging devices.",
+      "label": 0,
+      "pair_type": "random",
+      "avg_words": 71
+    },
+    {
+      "text1": "Gravity is a fundamental force of nature that attracts objects with mass toward one another. On Earth gravity gives weight to physical objects and causes them to fall toward the ground when dropped. The Moon orbits Earth because of the gravitational pull between the two bodies. Isaac Newton formulated the law of universal gravitation describing how masses attract each other. Einstein later described gravity as curvature in spacetime caused by mass and energy.",
+      "text2": "Evolution is the process of change in all forms of life over generations. Natural selection is the mechanism by which traits that help organisms survive and reproduce become more common in a population over time. Charles Darwin and Alfred Russel Wallace independently proposed the theory of evolution by natural selection. Genetic mutations provide the raw material for evolutionary change. The fossil record molecular biology and comparative anatomy all provide evidence for the shared ancestry of living organisms.",
+      "label": 0,
+      "pair_type": "random",
+      "avg_words": 75
+    },
+    {
+      "text1": "Democratic theory encompasses political science philosophy and sociology perspectives on how democracy functions and should function. Theorists debate the proper scope of democracy including how much direct participation citizens should have versus representative government. Deliberative democracy emphasizes rational discourse and public reasoning in political decision making. Some theorists argue that economic inequality threatens genuine democratic participation. The relationship between democracy and individual rights remains a central topic of scholarly debate.",
+      "text2": "Artificial neural networks are computing systems inspired by the biological neural networks that constitute animal brains. They consist of layers of interconnected nodes or neurons that process information. During training the network adjusts connection weights to minimize prediction errors. Convolutional neural networks are particularly effective for image recognition tasks. Recurrent neural networks handle sequential data such as text and time series by maintaining memory of previous inputs.",
+      "label": 0,
+      "pair_type": "random",
+      "avg_words": 68
+    },
+    {
+      "text1": "Gravity is a fundamental force of nature that attracts objects with mass toward one another. On Earth gravity gives weight to physical objects and causes them to fall toward the ground when dropped. The Moon orbits Earth because of the gravitational pull between the two bodies. Isaac Newton formulated the law of universal gravitation describing how masses attract each other. Einstein later described gravity as curvature in spacetime caused by mass and energy.",
+      "text2": "Gravity is a fundamental force of nature that attracts objects with mass toward one another. Gravitational waves are ripples in the curvature of spacetime that propagate as waves. They were first predicted by Albert Einstein in 1916 based on his gravitational pull between the two bodies. Isaac Newton formulated the law of universal gravitation describing how masses attract each other. Einstein later described gravity as curvature in spacetime caused by mass and energy.",
+      "label": 1,
+      "pair_type": "near_dup",
+      "avg_words": 73
+    },
+    {
+      "text1": "Evolution is the process of change in all forms of life over generations. Natural selection is the mechanism by which traits that help organisms survive and reproduce become more common in a population over time. Charles Darwin and Alfred Russel Wallace independently proposed the theory of evolution by natural selection. Genetic mutations provide the raw material for evolutionary change. The fossil record molecular biology and comparative anatomy all provide evidence for the shared ancestry of living organisms.",
+      "text2": "Evolutionary biology is the subfield of biology that studies the evolutionary processes that produced the diversity of life on Earth. This field encompasses genetics ecology behavior morphology and paleontology. Phylogenetics reconstructs the evolutionary relationships among organisms using genetic and morphological data. Speciation occurs when populations become reproductively isolated and diverge over time. Understanding evolution has practical applications in medicine agriculture and conservation biology.",
+      "label": 0,
+      "pair_type": "hard_neg",
+      "avg_words": 70
+    },
+    {
+      "text1": "Evolution is the process of change in all forms of life over generations. Natural selection is the mechanism by which traits that help organisms survive and reproduce become more common in a population over time. Charles Darwin and Alfred Russel Wallace independently proposed the theory of evolution by natural selection. Genetic mutations provide the raw material for evolutionary change. The fossil record molecular biology and comparative anatomy all provide evidence for the shared ancestry of living organisms.",
+      "text2": "Evolution is Evolutionary biology is the subfield of biology that studies the evolutionary processes that produced the diversity of life on Earth. This field encompasses genetics reproduce become more common in a population over time. Charles Darwin and Alfred Russel Wallace independently proposed the theory of evolution by natural selection. Genetic mutations provide the raw material for evolutionary change. The fossil record molecular biology and comparative anatomy all provide evidence for the shared ancestry of living organisms.",
+      "label": 1,
+      "pair_type": "near_dup",
+      "avg_words": 77
+    },
+    {
+      "text1": "Climate change refers to long-term shifts in global temperatures and weather patterns. While climate change is a natural phenomenon human activities have been the main driver since the 1800s primarily through burning fossil fuels. Rising greenhouse gas concentrations trap more heat in the atmosphere causing global warming. This leads to melting polar ice rising sea levels and more extreme weather events. International cooperation such as the Paris Agreement aims to limit global temperature rise.",
+      "text2": "Climate change refers to long-term shifts in global temperatures and weather patterns. While The carbon cycle describes the movement of carbon atoms between the atmosphere land oceans and 1800s primarily through burning fossil fuels. Rising greenhouse gas concentrations trap more heat in the atmosphere causing global warming. This leads to melting polar ice rising sea levels and more extreme weather events. International cooperation such as the Paris Agreement aims to limit global temperature rise.",
+      "label": 1,
+      "pair_type": "near_dup",
+      "avg_words": 74
+    },
+    {
+      "text1": "Quantum computing harnesses the principles of quantum mechanics to process information in fundamentally different ways than classical computers. Quantum bits or qubits can exist in superposition of states allowing parallel computation. Quantum entanglement enables correlations between qubits that have no classical equivalent. Quantum algorithms such as Shors algorithm can factor large numbers exponentially faster than classical methods. Building practical quantum computers requires maintaining coherence and minimizing decoherence from environmental noise.",
+      "text2": "Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that can be stored and later released to fuel the organism activities. This process involves the absorption of sunlight by chlorophyll pigments in the chloroplasts. The light energy splits water molecules releasing oxygen as a byproduct. Carbon dioxide from the air is fixed into sugars through the Calvin cycle. The overall equation captures the transformation of light into glucose energy.",
+      "label": 0,
+      "pair_type": "random",
+      "avg_words": 73
+    },
+    {
+      "text1": "Democracy is a system of government in which power is vested in the people who exercise that power directly or through elected representatives. The principles of democracy include free and fair elections rule of law protection of civil liberties and respect for human rights. Ancient Athens is often cited as the birthplace of democratic principles. Modern democracies take various forms including presidential and parliamentary systems. Voter participation is considered essential to healthy democratic governance.",
+      "text2": "Democracy is a system of government in which power is vested in the people who exercise that power directly or through elected representatives. The principles of democracy include free and fair elections rule of law protection of civil liberties and respect for human rights. Ancient Athens is Democratic theory encompasses political science philosophy and sociology perspectives on how democracy functions and should function. Theorists debate Voter participation is considered essential to healthy democratic governance.",
+      "label": 1,
+      "pair_type": "near_dup",
+      "avg_words": 74
+    },
+    {
+      "text1": "Evolutionary biology is the subfield of biology that studies the evolutionary processes that produced the diversity of life on Earth. This field encompasses genetics ecology behavior morphology and paleontology. Phylogenetics reconstructs the evolutionary relationships among organisms using genetic and morphological data. Speciation occurs when populations become reproductively isolated and diverge over time. Understanding evolution has practical applications in medicine agriculture and conservation biology.",
+      "text2": "Democracy is a system of government in which power is vested in the people who exercise that power directly or through elected representatives. The principles of democracy include free and fair elections rule of law protection of civil liberties and respect for human rights. Ancient Athens is often cited as the birthplace of democratic principles. Modern democracies take various forms including presidential and parliamentary systems. Voter participation is considered essential to healthy democratic governance.",
+      "label": 0,
+      "pair_type": "random",
+      "avg_words": 68
+    },
+    {
+      "text1": "Democracy is a system of government in which power is vested in the people who exercise that power directly or through elected representatives. The principles of democracy include free and fair elections rule of law protection of civil liberties and respect for human rights. Ancient Athens is often cited as the birthplace of democratic principles. Modern democracies take various forms including presidential and parliamentary systems. Voter participation is considered essential to healthy democratic governance.",
+      "text2": "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. Supervised learning uses labeled training data to learn mappings from inputs to outputs. Unsupervised learning discovers hidden patterns in unlabeled data. Deep learning uses neural networks with many layers to learn complex representations. Applications include image recognition natural language processing recommendation systems and autonomous vehicles.",
+      "label": 0,
+      "pair_type": "random",
+      "avg_words": 70
+    },
+    {
+      "text1": "Climate change refers to long-term shifts in global temperatures and weather patterns. While climate change is a natural phenomenon human activities have been the main driver since the 1800s primarily through burning fossil fuels. Rising greenhouse gas concentrations trap more heat in the atmosphere causing global warming. This leads to melting polar ice rising sea levels and more extreme weather events. International cooperation such as the Paris Agreement aims to limit global temperature rise.",
+      "text2": "The carbon cycle describes the movement of carbon atoms between the atmosphere land oceans and living organisms. Plants absorb carbon dioxide during photosynthesis converting it into organic matter. When organisms respire or decompose carbon is released back into the atmosphere. Human activities have altered the natural carbon cycle by releasing stored carbon through burning fossil fuels and deforestation. Understanding the carbon cycle is essential for addressing climate change and developing mitigation strategies.",
+      "label": 0,
+      "pair_type": "hard_neg",
+      "avg_words": 73
+    },
+    {
+      "text1": "Gravity is a fundamental force of nature that attracts objects with mass toward one another. On Earth gravity gives weight to physical objects and causes them to fall toward the ground when dropped. The Moon orbits Earth because of the gravitational pull between the two bodies. Isaac Newton formulated the law of universal gravitation describing how masses attract each other. Einstein later described gravity as curvature in spacetime caused by mass and energy.",
+      "text2": "Gravitational waves are ripples in the curvature of spacetime that propagate as waves. They were first predicted by Albert Einstein in 1916 based on his general theory of relativity. These waves travel at the speed of light and carry energy away from their source. The first direct detection of gravitational waves was announced by LIGO in 2016. The detected signal came from the merger of two black holes about one billion light years away.",
+      "label": 0,
+      "pair_type": "hard_neg",
+      "avg_words": 73
+    },
+    {
+      "text1": "Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that can be stored and later released to fuel the organism activities. This process involves the absorption of sunlight by chlorophyll pigments in the chloroplasts. The light energy splits water molecules releasing oxygen as a byproduct. Carbon dioxide from the air is fixed into sugars through the Calvin cycle. The overall equation captures the transformation of light into glucose energy.",
+      "text2": "Democracy is a system of government in which power is vested in the people who exercise that power directly or through elected representatives. The principles of democracy include free and fair elections rule of law protection of civil liberties and respect for human rights. Ancient Athens is often cited as the birthplace of democratic principles. Modern democracies take various forms including presidential and parliamentary systems. Voter participation is considered essential to healthy democratic governance.",
+      "label": 0,
+      "pair_type": "random",
+      "avg_words": 75
+    },
+    {
+      "text1": "Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that can be stored and later released to fuel the organism activities. This process involves the absorption of sunlight by chlorophyll pigments in the chloroplasts. The light energy splits water molecules releasing oxygen as a byproduct. Carbon dioxide from the air is fixed into sugars through the Calvin cycle. The overall equation captures the transformation of light into glucose energy.",
+      "text2": "The rate of photosynthesis depends on several environmental factors including light intensity temperature and carbon dioxide concentration. Higher light intensity generally increases the rate up to a saturation point. Temperature affects the enzyme-controlled reactions of the Calvin cycle. Carbon dioxide concentration is often the limiting factor in natural environments. Plants have evolved various adaptations to optimize photosynthetic efficiency under different conditions.",
+      "label": 0,
+      "pair_type": "hard_neg",
+      "avg_words": 69
+    },
+    {
+      "text1": "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. Supervised learning uses labeled training data to learn mappings from inputs to outputs. Unsupervised learning discovers hidden patterns in unlabeled data. Deep learning uses neural networks with many layers to learn complex representations. Applications include image recognition natural language processing recommendation systems and autonomous vehicles.",
+      "text2": "Artificial neural networks are computing systems inspired by the biological neural networks that constitute animal brains. They consist of layers of interconnected nodes or neurons that process information. During training the network adjusts connection weights to minimize prediction errors. Convolutional neural networks are particularly effective for image recognition tasks. Recurrent neural networks handle sequential data such as text and time series by maintaining memory of previous inputs.",
+      "label": 0,
+      "pair_type": "hard_neg",
+      "avg_words": 66
+    },
+    {
+      "text1": "Evolution is the process of change in all forms of life over generations. Natural selection is the mechanism by which traits that help organisms survive and reproduce become more common in a population over time. Charles Darwin and Alfred Russel Wallace independently proposed the theory of evolution by natural selection. Genetic mutations provide the raw material for evolutionary change. The fossil record molecular biology and comparative anatomy all provide evidence for the shared ancestry of living organisms.",
+      "text2": "Gravity is a fundamental force of nature that attracts objects with mass toward one another. On Earth gravity gives weight to physical objects and causes them to fall toward the ground when dropped. The Moon orbits Earth because of the gravitational pull between the two bodies. Isaac Newton formulated the law of universal gravitation describing how masses attract each other. Einstein later described gravity as curvature in spacetime caused by mass and energy.",
+      "label": 0,
+      "pair_type": "random",
+      "avg_words": 75
+    },
+    {
+      "text1": "Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles. It introduces concepts such as wave-particle duality superposition and entanglement. The uncertainty principle states that certain pairs of physical properties cannot both be precisely known at the same time. Schrodinger equation describes how the quantum state of a physical system changes over time. Quantum mechanics underpins modern technologies such as semiconductors lasers and medical imaging devices.",
+      "text2": "The Renaissance was a period of European cultural artistic political and economic rebirth following the Middle Ages. It began in Italy in the 14th century and spread across Europe over the following two centuries. Renaissance thinkers embraced humanism emphasizing human potential and classical learning. Major figures include Leonardo da Vinci Michelangelo Raphael and Galileo Galilei. The invention of the printing press facilitated the spread of ideas and contributed to the scientific revolution.",
+      "label": 0,
+      "pair_type": "random",
+      "avg_words": 77
+    },
+    {
+      "text1": "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. Supervised learning uses labeled training data to learn mappings from inputs to outputs. Unsupervised learning discovers hidden patterns in unlabeled data. Deep learning uses neural networks with many layers to learn complex representations. Applications include image recognition natural language processing recommendation systems and autonomous vehicles.",
+      "text2": "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. Supervised learning uses labeled training data to learn mappings from inputs to outputs. Unsupervised learning discovers hidden Artificial neural networks are computing systems inspired by the biological neural networks that constitute animal brains. Applications include image recognition natural language processing recommendation systems and autonomous vehicles.",
+      "label": 1,
+      "pair_type": "near_dup",
+      "avg_words": 66
+    },
+    {
+      "text1": "Gravitational waves are ripples in the curvature of spacetime that propagate as waves. They were first predicted by Albert Einstein in 1916 based on his general theory of relativity. These waves travel at the speed of light and carry energy away from their source. The first direct detection of gravitational waves was announced by LIGO in 2016. The detected signal came from the merger of two black holes about one billion light years away.",
+      "text2": "Climate change refers to long-term shifts in global temperatures and weather patterns. While climate change is a natural phenomenon human activities have been the main driver since the 1800s primarily through burning fossil fuels. Rising greenhouse gas concentrations trap more heat in the atmosphere causing global warming. This leads to melting polar ice rising sea levels and more extreme weather events. International cooperation such as the Paris Agreement aims to limit global temperature rise.",
+      "label": 0,
+      "pair_type": "random",
+      "avg_words": 74
+    },
+    {
+      "text1": "Photosynthesis is a process used by plants and other organisms to convert light energy into chemical energy that can be stored and later released to fuel the organism activities. This process involves the absorption of sunlight by chlorophyll pigments in the chloroplasts. The light energy splits water molecules releasing oxygen as a byproduct. Carbon dioxide from the air is fixed into sugars through the Calvin cycle. The overall equation captures the transformation of light into glucose energy.",
+      "text2": "Photosynthesis The rate of photosynthesis depends on several environmental factors including light intensity temperature and carbon dioxide concentration. Higher light intensity generally increases the rate up the organism activities. This process involves the absorption of sunlight by chlorophyll pigments in the chloroplasts. The light energy splits water molecules releasing oxygen as a byproduct. Carbon dioxide from the air is fixed into sugars through the Calvin cycle. The overall equation captures the transformation of light into glucose energy.",
+      "label": 1,
+      "pair_type": "near_dup",
+      "avg_words": 77
+    }
+  ]
+}
