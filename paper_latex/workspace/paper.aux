@@ -1,0 +1,92 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Broder1997,Manku2007}
+\citation{Lee2022,Gao2020,Penedo2024,Penedo2023}
+\citation{Penedo2024}
+\citation{Penedo2023}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{Cox1966}
+\citation{Hunt1977}
+\citation{Broder1997}
+\citation{Manku2007}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{2}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{MinHash and SimHash.}{2}{section*.1}\protected@file@percent }
+\citation{Zhang2023}
+\citation{Li2004}
+\citation{Lee2022}
+\citation{Penedo2024}
+\citation{Penedo2023}
+\citation{Abbas2023}
+\citation{Nawab2011}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The Edit Clustering Score (ECS) pipeline. Given a text pair, a word-level LCS diff extracts edit positions; the Index of Dispersion of inter-edit gaps quantifies spatial clustering. Near-duplicates (contiguous splice) produce one large block and low IoD; thematic near-matches produce many small scattered edits and high IoD. The inverted score (1/IoD or equivalently $-$IoD) serves as the near-duplicate signal.}}{3}{figure.1}\protected@file@percent }
+\newlabel{fig:fig1}{{1}{3}{The Edit Clustering Score (ECS) pipeline. Given a text pair, a word-level LCS diff extracts edit positions; the Index of Dispersion of inter-edit gaps quantifies spatial clustering. Near-duplicates (contiguous splice) produce one large block and low IoD; thematic near-matches produce many small scattered edits and high IoD. The inverted score (1/IoD or equivalently $-$IoD) serves as the near-duplicate signal}{figure.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Neural similarity.}{3}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Compression-based similarity.}{3}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{LLM training data deduplication.}{3}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Passage-level plagiarism detection.}{3}{section*.5}\protected@file@percent }
+\citation{Cox1966}
+\citation{Peters2001}
+\@writefile{toc}{\contentsline {paragraph}{Spatial point processes.}{4}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Dataset Construction}{4}{section.3}\protected@file@percent }
+\newlabel{sec:data}{{3}{4}{Dataset Construction}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Splice-Based Wikipedia Benchmark}{4}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Boilerplate Hard-Negative Benchmark}{4}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Method: Edit Clustering Score}{4}{section.4}\protected@file@percent }
+\newlabel{sec:method}{{4}{4}{Method: Edit Clustering Score}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Word-Level Diff}{4}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Index of Dispersion on Edit Positions}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Auxiliary Features}{5}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Classifiers}{5}{subsection.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Distribution of log-IoD (Edit Clustering Score) by pair class on the splice-based Wikipedia benchmark (300 pairs per class). Near-duplicate pairs (contiguous splice) have significantly lower IoD (median 20.3) than hard-negative same-category pairs (median 81.8) or random pairs (median 47.5). Mann-Whitney $p = 4 \times 10^{-39}$, Cohen's $d = -0.83$ on log-IoD. The inverted ECS (low IoD $\to $ near-duplicate) achieves AUC = 0.81 standalone.}}{6}{figure.2}\protected@file@percent }
+\newlabel{fig:fig2}{{2}{6}{Distribution of log-IoD (Edit Clustering Score) by pair class on the splice-based Wikipedia benchmark (300 pairs per class). Near-duplicate pairs (contiguous splice) have significantly lower IoD (median 20.3) than hard-negative same-category pairs (median 81.8) or random pairs (median 47.5). Mann-Whitney $p = 4 \times 10^{-39}$, Cohen's $d = -0.83$ on log-IoD. The inverted ECS (low IoD $\to $ near-duplicate) achieves AUC = 0.81 standalone}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{6}{section.5}\protected@file@percent }
+\newlabel{sec:results}{{5}{6}{Results}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}IoD Distributions Confirm Structural Signal with Inverted Directionality}{6}{subsection.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Median feature values by pair class on the splice-based 900-pair Wikipedia benchmark (300 pairs each class). Edit span frac captures the fraction of the aligned sequence between the first and last edit token.}}{6}{table.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Classification Results}{6}{subsection.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces ROC-AUC (mean $\pm $ std, 5-fold CV) on the hard subset (near-duplicate vs.\ hard-negative only) for both benchmarks. Jaccard achieves AUC = 1.000 on both datasets; inverted ECS achieves AUC $\approx $ 0.81 standalone; combining features does not improve over Jaccard alone.}}{7}{table.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces ROC-AUC on the near-duplicate vs.\ hard-negative hard subset (5-fold CV) for five classifier variants on both benchmarks. Jaccard (5-gram and 2-gram) achieves perfect AUC = 1.000 on both datasets. Inverted ECS alone achieves AUC = 0.809 on the splice benchmark and AUC = 0.807 on the boilerplate benchmark. Adding ECS to Jaccard yields no improvement ($\Delta $AUC $\approx $ 0) because Jaccard is already a perfect separator.}}{7}{figure.3}\protected@file@percent }
+\newlabel{fig:fig3}{{3}{7}{ROC-AUC on the near-duplicate vs.\ hard-negative hard subset (5-fold CV) for five classifier variants on both benchmarks. Jaccard (5-gram and 2-gram) achieves perfect AUC = 1.000 on both datasets. Inverted ECS alone achieves AUC = 0.809 on the splice benchmark and AUC = 0.807 on the boilerplate benchmark. Adding ECS to Jaccard yields no improvement ($\Delta $AUC $\approx $ 0) because Jaccard is already a perfect separator}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces 5-gram Jaccard ($J_5$) distributions by pair class on both benchmarks. On the splice benchmark (top), near-duplicate pairs have $J_5 \in [0.50, 0.75]$ (mean 0.58) while both negative classes have $J_5 \approx 0$, creating a perfect separation. On the boilerplate benchmark (bottom), the boilerplate hard-negative class shifts upward to $J_5 = 0.09$--$0.15$ (mean 0.089) due to the shared CC-BY-SA header, but still does not overlap with the near-duplicate range---explaining why Jaccard remains a perfect classifier on this benchmark.}}{8}{figure.4}\protected@file@percent }
+\newlabel{fig:fig4}{{4}{8}{5-gram Jaccard ($J_5$) distributions by pair class on both benchmarks. On the splice benchmark (top), near-duplicate pairs have $J_5 \in [0.50, 0.75]$ (mean 0.58) while both negative classes have $J_5 \approx 0$, creating a perfect separation. On the boilerplate benchmark (bottom), the boilerplate hard-negative class shifts upward to $J_5 = 0.09$--$0.15$ (mean 0.089) due to the shared CC-BY-SA header, but still does not overlap with the near-duplicate range---explaining why Jaccard remains a perfect classifier on this benchmark}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Jaccard Distribution Comparison Across Benchmarks}{8}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{8}{section.6}\protected@file@percent }
+\newlabel{sec:discussion}{{6}{8}{Discussion}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Addressing the Directional Inversion}{8}{subsection.6.1}\protected@file@percent }
+\citation{Penedo2024}
+\citation{Penedo2023}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Why Boilerplate Augmentation Was Insufficient}{9}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}When ECS Would Complement Jaccard}{9}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Data Consistency Across Iterations}{9}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Limitations}{9}{subsection.6.5}\protected@file@percent }
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{Li2004}{{1}{2004}{{Li et~al.}}{{Li, Chen, Li, Ma, and Vit\'{a}nyi}}}
+\bibcite{Gao2020}{{2}{2020}{{Gao et~al.}}{{Gao, Biderman, Black, Golding, Hoppe, Foster, Phang, He, Thite, Nabeshima, Presser, and Leahy}}}
+\bibcite{Cox1966}{{3}{1966}{{Cox and Lewis}}{{}}}
+\bibcite{Lee2022}{{4}{2022}{{Lee et~al.}}{{Lee, Ippolito, Nystrom, Zhang, Eck, Callison-Burch, and Carlini}}}
+\bibcite{Hunt1977}{{5}{1977}{{Hunt and Szymanski}}{{}}}
+\bibcite{Manku2007}{{6}{2007}{{Manku et~al.}}{{Manku, Jain, and Sarma}}}
+\bibcite{Nawab2011}{{7}{2011}{{Nawab et~al.}}{{Nawab, Stevenson, and Clough}}}
+\bibcite{Abbas2023}{{8}{2023}{{Abbas et~al.}}{{Abbas, Tirumala, Simig, Ganguli, and Morcos}}}
+\bibcite{Zhang2023}{{9}{2023}{{Zhang et~al.}}{{Zhang, Vallis, Bumin, Vakharia, and Bursztein}}}
+\bibcite{Broder1997}{{10}{1997}{{Broder}}{{}}}
+\bibcite{Peters2001}{{11}{2001}{{Peters}}{{}}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{10}{section.7}\protected@file@percent }
+\bibcite{Penedo2023}{{12}{2023}{{Penedo et~al.}}{{Penedo, Malartic, Hesslow, Cojocaru, Cappelli, Alobeidli, Pannier, Almazrouei, and Launay}}}
+\bibcite{Penedo2024}{{13}{2024}{{Penedo et~al.}}{{Penedo, Kydl{\'i}\v {c}ek, Allal, Lozhkov, Mitchell, Raffel, Werra, and Wolf}}}
+\gdef \@abspage@last{11}

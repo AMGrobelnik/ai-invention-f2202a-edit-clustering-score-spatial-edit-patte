@@ -1,0 +1,15 @@
+{
+  "title": "Edit Clustering Score for Near-Duplicate Text",
+  "summary": "Generated an 11-page publication-ready LaTeX paper titled 'Edit Clustering Score: Spatial Edit Patterns for Near-Duplicate Text Detection'. The paper includes all 7 sections: Introduction, Related Work, Dataset Construction, Method, Results, Discussion, and Conclusion. All 4 figures were included from available_figures (fig1_v0.jpg: ECS pipeline diagram; fig2_v0.jpg: IoD distributions by class; fig3_v0.jpg: AUC comparison bar chart; fig4_v0.jpg: Jaccard distributions on both benchmarks). All figures use figure* environment with full-width placement as specified for 21:9 aspect ratio. Two tables are included (Table 1: median feature values by class; Table 2: AUC results). The references.bib file contains 13 verified BibTeX entries (Broder 1997, Manku 2007, Zhang 2023, Li 2004, Lee 2022, Gao 2020, Abbas 2023, Nawab 2011, Penedo 2024, Penedo 2023, Cox 1966, Hunt 1977, Peters 2001). Bibliography was compiled successfully using bibtex8. PDF compiled to 11 pages with no citation ?? placeholders. Visual review of all 11 pages confirmed: clean layout, no overlapping figures, no cut-off text, tables render correctly with booktabs formatting, math renders correctly, footnotes with GitHub URLs appear on pages 2. The paper accurately conveys the ECS method, its directional inversion finding (low IoD flags near-duplicates, AUC=0.81 standalone), the Jaccard ceiling (AUC=1.000), and the boilerplate augmentation experiment.",
+  "out_expected_files": {
+    "paper_tex_path": "paper.tex",
+    "paper_pdf_path": "paper.pdf",
+    "references_bib_path": "references.bib",
+    "figure_paths": [
+      "figures/fig1_v0.jpg",
+      "figures/fig2_v0.jpg",
+      "figures/fig3_v0.jpg",
+      "figures/fig4_v0.jpg"
+    ]
+  }
+}

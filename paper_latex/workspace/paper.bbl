@@ -1,0 +1,98 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Li et~al.(2004)Li, Chen, Li, Ma, and Vit\'{a}nyi]{Li2004}
+Ming Li, Xin Chen, Xin Li, Bin Ma, and Paul M.~B. Vit\'{a}nyi.
+\newblock The similarity metric.
+\newblock \emph{IEEE Transactions on Information Theory}, 50\penalty0
+  (12):\penalty0 3250--3264, 2004.
+\newblock \doi{10.1109/TIT.2004.838101}.
+
+\bibitem[Gao et~al.(2020)Gao, Biderman, Black, Golding, Hoppe, Foster, Phang,
+  He, Thite, Nabeshima, Presser, and Leahy]{Gao2020}
+Leo Gao, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles
+  Foster, Jason Phang, Horace He, Anish Thite, Noa Nabeshima, Shawn Presser,
+  and Connor Leahy.
+\newblock The pile: An 800{GB} dataset of diverse text for language modeling.
+\newblock \emph{arXiv:2101.00027}, 2020.
+
+\bibitem[Cox and Lewis(1966)]{Cox1966}
+David~R. Cox and P.~A.~W. Lewis.
+\newblock \emph{The Statistical Analysis of Series of Events}.
+\newblock Methuen, 1966.
+
+\bibitem[Lee et~al.(2022)Lee, Ippolito, Nystrom, Zhang, Eck, Callison-Burch,
+  and Carlini]{Lee2022}
+Katherine Lee, Daphne Ippolito, Andrew Nystrom, Chiyuan Zhang, Douglas Eck,
+  Chris Callison-Burch, and Nicholas Carlini.
+\newblock Deduplicating training data makes language models better.
+\newblock In \emph{Proceedings of ACL}, pages 8424--8445, 2022.
+\newblock \doi{10.18653/v1/2022.acl-long.577}.
+
+\bibitem[Hunt and Szymanski(1977)]{Hunt1977}
+James~W. Hunt and Thomas~G. Szymanski.
+\newblock A fast algorithm for computing longest common subsequences.
+\newblock \emph{Communications of the ACM}, 20\penalty0 (5):\penalty0 350--353,
+  1977.
+
+\bibitem[Manku et~al.(2007)Manku, Jain, and Sarma]{Manku2007}
+G.~Manku, A.~Jain, and A.~Sarma.
+\newblock Detecting near-duplicates for web crawling.
+\newblock In \emph{Proceedings of WWW}, pages 141--150, 2007.
+\newblock \doi{10.1145/1242572.1242592}.
+
+\bibitem[Nawab et~al.(2011)Nawab, Stevenson, and Clough]{Nawab2011}
+R.~M.~A. Nawab, Mark Stevenson, and Paul~D. Clough.
+\newblock External plagiarism detection using information retrieval and
+  sequence alignment.
+\newblock In \emph{CLEF}, 2011.
+
+\bibitem[Abbas et~al.(2023)Abbas, Tirumala, Simig, Ganguli, and
+  Morcos]{Abbas2023}
+Amro Abbas, Kushal Tirumala, Daniel Simig, Surya Ganguli, and Ari~S. Morcos.
+\newblock {SemDeDup}: Data-efficient learning at web-scale through semantic
+  deduplication.
+\newblock \emph{arXiv:2303.09540}, 2023.
+\newblock \doi{10.48550/arXiv.2303.09540}.
+
+\bibitem[Zhang et~al.(2023)Zhang, Vallis, Bumin, Vakharia, and
+  Bursztein]{Zhang2023}
+Marina Zhang, Owen Vallis, Ali Bumin, Tanay Vakharia, and Elie Bursztein.
+\newblock {RETSim}: Resilient and efficient text similarity.
+\newblock In \emph{ICLR}, 2023.
+
+\bibitem[Broder(1997)]{Broder1997}
+A.~Broder.
+\newblock On the resemblance and containment of documents.
+\newblock In \emph{Proceedings. Compression and Complexity of SEQUENCES 1997},
+  pages 21--29, 1997.
+\newblock \doi{10.1109/SEQUEN.1997.666900}.
+
+\bibitem[Peters(2001)]{Peters2001}
+Tim Peters.
+\newblock difflib: Helpers for computing deltas.
+\newblock Python Standard Library, 2001.
+
+\bibitem[Penedo et~al.(2023)Penedo, Malartic, Hesslow, Cojocaru, Cappelli,
+  Alobeidli, Pannier, Almazrouei, and Launay]{Penedo2023}
+Guilherme Penedo, Quentin Malartic, Daniel Hesslow, Ruxandra-Aim{\'e}e
+  Cojocaru, Alessandro Cappelli, Hamza Alobeidli, Baptiste Pannier, Ebtesam
+  Almazrouei, and Julien Launay.
+\newblock The {RefinedWeb} dataset for falcon {LLM}.
+\newblock \emph{arXiv:2306.01116}, 2023.
+\newblock \doi{10.48550/arXiv.2306.01116}.
+
+\bibitem[Penedo et~al.(2024)Penedo, Kydl{\'i}\v{c}ek, Allal, Lozhkov, Mitchell,
+  Raffel, Werra, and Wolf]{Penedo2024}
+Guilherme Penedo, Hynek Kydl{\'i}\v{c}ek, Loubna~Ben Allal, Anton Lozhkov,
+  Margaret Mitchell, Colin Raffel, Leandro~Von Werra, and Thomas Wolf.
+\newblock The {FineWeb} datasets: Decanting the web for the finest text data at
+  scale.
+\newblock In \emph{NeurIPS}, 2024.
+\newblock \doi{10.48550/arXiv.2406.17557}.
+
+\end{thebibliography}
