@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "hypothesis": "ECS (IoD of inter-edit gaps) adds signal over Jaccard for near-duplicate detection",
+    "method": "Edit Clustering Score (ECS) = Index of Dispersion of word-level LCS edit positions",
+    "n_pairs": 605,
+    "pairs_per_class": 300,
+    "n_articles_loaded": 3000,
+    "classification_results": {
+      "jaccard_only": {
+        "auc_mean": 1.0,
+        "auc_std": 0.0,
+        "auc_folds": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "ecs_only": {
+        "auc_mean": 0.972896174863388,
+        "auc_std": 0.006180905211880986,
+        "auc_folds": [
+          0.9773224043715847,
+          0.9819672131147541,
+          0.9669398907103824,
+          0.9655737704918033,
+          0.9726775956284153
+        ]
+      },
+      "jaccard_ecs": {
+        "auc_mean": 1.0,
+        "auc_std": 0.0,
+        "auc_folds": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "all_features": {
+        "auc_mean": 1.0,
+        "auc_std": 0.0,
+        "auc_folds": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "hard_neg_results": {
+      "jaccard_only": {
+        "auc_mean": 1.0,
+        "auc_std": 0.0
+      },
+      "jaccard_ecs": {
+        "auc_mean": 1.0,
+        "auc_std": 0.0
+      },
+      "all_features": {
+        "auc_mean": 1.0,
+        "auc_std": 0.0
+      }
+    },
+    "precision_at_80pct_recall": {
+      "jaccard_only": 1.0,
+      "ecs_only": 0.9682539682539683,
+      "jaccard_ecs": 1.0,
+      "all_features": 1.0
+    },
+    "mann_whitney_nd_vs_all_neg": {
+      "statistic": 2558.0,
+      "p_value": 1.0,
+      "median_iod_near_dup": 4.340579710144928,
+      "median_iod_neg": 47.392216788916045,
+      "median_ratio": 0.09158845068138914
+    },
+    "mann_whitney_nd_vs_hard_neg": {
+      "statistic": 70.0,
+      "p_value": 0.9997510426145879,
+      "median_iod_near_dup": 4.340579710144928,
+      "median_iod_hard_neg": 22.888932806324114,
+      "median_ratio": 0.18963661375929278
+    },
+    "feature_summary": {
+      "median_jaccard_near_dup": 0.5224267428329631,
+      "median_jaccard_hard_neg": 0.0,
+      "median_jaccard_random": 0.0,
+      "median_ecs_near_dup": 4.340579710144928,
+      "median_ecs_hard_neg": 22.888932806324114,
+      "median_ecs_random": 47.5132203604976,
+      "mean_ecs_near_dup": 6.358221124383296,
+      "mean_ecs_neg": 48.300669459558144
+    },
+    "verdict": "DISCONFIRMED",
+    "delta_auc_combined_vs_jaccard_only": 0.0
+  },
+  "datasets": [
+    {
+      "dataset": "wikipedia_near_dup_synthetic",
+      "examples": [
+        {
+          "input": "pair_type=random jaccard=0.000 ecs=85.10",
+          "output": "0",
+          "predict_jaccard": "0.0114",
+          "predict_ecs": "0.0000",
+          "predict_combined": "0.0009",
+          "predict_all_features": "0.0000",
+          "metadata_pair_type": "random",
+          "metadata_jaccard": "0.0000",
+          "metadata_ecs": "85.0980"
+        },
+        {
+          "input": "pair_type=random jaccard=0.000 ecs=80.72",
+          "output": "0",
+          "predict_jaccard": "0.0114",
+          "predict_ecs": "0.0000",
+          "predict_combined": "0.0011",
+          "predict_all_features": "0.0010",
+          "metadata_pair_type": "random",
+          "metadata_jaccard": "0.0000",
+          "metadata_ecs": "80.7209"
+        },
+        {
+          "input": "pair_type=near_dup jaccard=0.543 ecs=15.80",
+          "output": "1",
+          "predict_jaccard": "0.9949",
+          "predict_ecs": "0.6466",
+          "predict_combined": "0.9933",
+          "predict_all_features": "0.9973",
+          "metadata_pair_type": "near_dup",
+          "metadata_jaccard": "0.5427",
+          "metadata_ecs": "15.7976"
+        }
+      ]
+    }
+  ]
+}

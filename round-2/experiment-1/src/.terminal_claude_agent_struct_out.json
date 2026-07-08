@@ -1,0 +1,15 @@
+{
+  "title": "ECS vs Jaccard Near-Duplicate Detection Experiment",
+  "layman_summary": "Tests whether edit-pattern clustering (ECS) complements word-overlap (Jaccard) for detecting near-duplicate text pairs, using Wikipedia articles with and without shared boilerplate headers.",
+  "summary": "This experiment compares Edit Clustering Score (inverted Index of Dispersion of edit positions, ECS) against n-gram Jaccard similarity for near-duplicate text detection, across two benchmarks: (1) the original 900-pair Wikipedia benchmark (300 near-duplicate / 300 hard-negative same-category / 300 random) and (2) a new 900-pair boilerplate benchmark where hard-negative pairs are prepended with ~180 words of identical boilerplate text. Key results: (a) inv_ECS alone achieves AUC=0.809±0.025 on both benchmarks, capturing structural edit-clustering signal without any n-gram overlap. (b) 2-gram and 5-gram Jaccard achieve perfect AUC=1.000 on both benchmarks — the boilerplate inflation (mean 5-gram Jaccard=0.089 on boilerplate-hard-neg pairs) did NOT degrade Jaccard because boilerplate-hard-neg J5 (0.08–0.15) remains far below near-duplicate J5 (0.42–0.70). (c) The primary hypothesis (delta AUC ≥ 0.03 for J2+ECS vs J2 alone on boilerplate benchmark) was NOT confirmed (delta≈0). (d) However, the IoD distributional signal IS confirmed: near-duplicate pairs have strongly lower IoD (median=20.3) vs hard-negative pairs (median=81.8), Mann-Whitney p≈4×10⁻³⁹ on both benchmarks. ECS captures a complementary, boilerplate-independent structural signal, but Jaccard remains so discriminative on these benchmarks that adding ECS yields no marginal gain. Output contains 1800 examples (900 wiki + 900 boilerplate) each with 6 predict_* fields (per feature set: jaccard5_only, jaccard2_only, inv_ecs_only, jaccard5_inv_ecs, jaccard2_inv_ecs, all_features) and per-pair metadata (fold, jaccard scores, ECS metrics). 5-fold CV with LogisticRegression + StandardScaler. Bootstrap CI (B=2000) for delta AUC. All computation is CPU-only, $0 cost, runtime ~45 seconds.",
+  "out_expected_files": {
+    "script": "method.py",
+    "full_output": "full_method_out.json",
+    "mini_output": "mini_method_out.json",
+    "preview_output": "preview_method_out.json"
+  },
+  "upload_ignore_regexes": [
+    "(^|/)logs/",
+    "(^|/)\\.venv/"
+  ]
+}

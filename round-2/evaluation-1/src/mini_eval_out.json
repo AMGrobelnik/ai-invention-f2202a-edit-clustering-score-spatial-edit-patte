@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "evaluation": "ECS vs Jaccard Statistical Evaluation",
+    "source": "synthetic_vocab_template",
+    "source_note": "All pairs generated from synthetic vocabulary-template articles (NOT Wikipedia-derived). Each article uses a 60-word topic-specific vocabulary (politics/sports/science/business/technology). Claims verified on synthetic data only.",
+    "n_pairs": 605,
+    "n_near_dup": 300,
+    "n_hard_neg": 5,
+    "n_random": 300,
+    "verdict": "PARTIAL",
+    "jaccard_ceiling_note": "Jaccard AUC=1.0 on hard subset blocks complementarity measurement (all hard_neg have Jaccard=0.0)",
+    "boilerplate_augmentation": "Simulated: hard_neg jaccard += 0.35 (shared prefix), near_dup unchanged; ECS unchanged",
+    "decision_tree": {
+      "feature_names": [
+        "jaccard",
+        "inv_ecs"
+      ],
+      "n_nodes": 3,
+      "root_feature": 0,
+      "root_threshold": 0.20589999854564667,
+      "root_impurity": 0.03224939532383764,
+      "feature_importances": {
+        "jaccard": 1.0,
+        "inv_ecs": 0.0
+      },
+      "left_split": {
+        "feature": -2,
+        "threshold": -2.0
+      },
+      "right_split": {
+        "feature": -2,
+        "threshold": -2.0
+      }
+    },
+    "length_stratification_note": "Length proxy = ECS magnitude (no raw word counts in method_out); binned hard subset by ECS tercile",
+    "length_stratified_auc": {
+      "short": {
+        "n": 102,
+        "note": "insufficient_class_diversity"
+      },
+      "medium": {
+        "n": 101,
+        "note": "insufficient_class_diversity"
+      },
+      "long": {
+        "n": 102,
+        "inv_ecs_auc": 0.8549077397209384,
+        "jaccard_auc": 1.0
+      }
+    },
+    "mw_details": {
+      "statistic": 70.0,
+      "p_two_sided": 0.0005075136846330389,
+      "p_less": 0.00025375684231651943,
+      "median_nd": 4.34055,
+      "median_hn": 22.8889,
+      "ratio": 0.18963558755554005,
+      "cohens_d_log_iod": -2.1934054666795917
+    },
+    "delta_auc_threshold": 0.03,
+    "ecs_auc_threshold": 0.65
+  },
+  "metrics_agg": {
+    "inv_ecs_auc_hard": 0.9533342699640551,
+    "inv_ecs_auc_hard_ci_lo": 0.9139918643027093,
+    "inv_ecs_auc_hard_ci_hi": 0.9836739273927393,
+    "jaccard_auc_hard": 1.0,
+    "jaccard_auc_hard_ci_lo": 1.0,
+    "jaccard_auc_hard_ci_hi": 1.0,
+    "delta_auc_full_combined_vs_jaccard": -1.459943277382081e-17,
+    "delta_auc_full_ci_lo": -1.1102230246251565e-16,
+    "delta_auc_full_ci_hi": 0.0,
+    "delta_auc_hard_inv_ecs_vs_jaccard": -0.04635049488180417,
+    "delta_auc_hard_ci_lo": -0.08839183222958058,
+    "delta_auc_hard_ci_hi": -0.015766708245552707,
+    "bpl_inv_ecs_auc": 0.9535606035469093,
+    "bpl_jaccard_auc": 1.0,
+    "bpl_delta_auc": -0.046686928539852,
+    "bpl_delta_ci_lo": -0.08701650830214025,
+    "bpl_delta_ci_hi": -0.014666666666666689,
+    "mw_u_statistic": 70.0,
+    "mw_p_value_two_sided": 0.0005075136846330389,
+    "mw_p_value_less": 0.00025375684231651943,
+    "median_iod_near_dup": 4.34055,
+    "median_iod_hard_neg": 22.8889,
+    "median_iod_ratio": 0.18963558755554005,
+    "cohens_d_log_iod": -2.1934054666795917,
+    "n_near_dup": 300,
+    "n_hard_neg": 5,
+    "jaccard_ceiling_on_hard": 1.0,
+    "verdict_confirmed": 0.0,
+    "verdict_partial": 1.0,
+    "verdict_disconfirmed": 0.0
+  },
+  "datasets": [
+    {
+      "dataset": "wikipedia_near_dup_synthetic_eval",
+      "examples": [
+        {
+          "input": "pair_type=random jaccard=0.000 ecs=85.10",
+          "output": "0",
+          "predict_jaccard": "0.0114",
+          "predict_ecs": "0.0000",
+          "predict_combined": "0.0009",
+          "predict_all_features": "0.0000",
+          "metadata_pair_type": "random",
+          "metadata_jaccard": "0.0000",
+          "metadata_ecs": "85.0980",
+          "metadata_inv_ecs": "-85.098",
+          "metadata_source": "synthetic_vocab_template",
+          "metadata_is_hard_subset": "0",
+          "eval_label": 0.0,
+          "eval_inv_ecs": -85.098,
+          "eval_correct_jaccard": 1.0
+        },
+        {
+          "input": "pair_type=random jaccard=0.000 ecs=80.72",
+          "output": "0",
+          "predict_jaccard": "0.0114",
+          "predict_ecs": "0.0000",
+          "predict_combined": "0.0011",
+          "predict_all_features": "0.0010",
+          "metadata_pair_type": "random",
+          "metadata_jaccard": "0.0000",
+          "metadata_ecs": "80.7209",
+          "metadata_inv_ecs": "-80.7209",
+          "metadata_source": "synthetic_vocab_template",
+          "metadata_is_hard_subset": "0",
+          "eval_label": 0.0,
+          "eval_inv_ecs": -80.7209,
+          "eval_correct_jaccard": 1.0
+        },
+        {
+          "input": "pair_type=near_dup jaccard=0.543 ecs=15.80",
+          "output": "1",
+          "predict_jaccard": "0.9949",
+          "predict_ecs": "0.6466",
+          "predict_combined": "0.9933",
+          "predict_all_features": "0.9973",
+          "metadata_pair_type": "near_dup",
+          "metadata_jaccard": "0.5427",
+          "metadata_ecs": "15.7976",
+          "metadata_inv_ecs": "-15.7976",
+          "metadata_source": "synthetic_vocab_template",
+          "metadata_is_hard_subset": "1",
+          "eval_label": 1.0,
+          "eval_inv_ecs": -15.7976,
+          "eval_correct_jaccard": 1.0
+        }
+      ]
+    }
+  ]
+}

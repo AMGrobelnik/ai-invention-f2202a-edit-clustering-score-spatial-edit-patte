@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "method_name": "ECS vs Jaccard near-duplicate detection",
+    "description": "Edit Clustering Score (inverted IoD) vs n-gram Jaccard on Wiki + Boilerplate benchmarks",
+    "hypothesis": "inverted_ECS complements Jaccard when boilerplate inflates n-gram overlap",
+    "runtime_seconds": 43.4,
+    "summary": {
+      "wiki_benchmark": {
+        "cv_results_hard_subset": {
+          "jaccard5_only": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "jaccard2_only": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "inv_ecs_only": {
+            "auc_mean": 0.8087222222222223,
+            "auc_std": 0.025352210315892267,
+            "fold_aucs": [
+              0.7763888888888889,
+              0.8522222222222222,
+              0.8113888888888889
+            ]
+          },
+          "jaccard5_inv_ecs": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "jaccard2_inv_ecs": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "all_features": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "cv_results_all_labels": {
+          "jaccard5_only": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "jaccard2_only": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "inv_ecs_only": {
+            "auc_mean": 0.8142777777777777,
+            "auc_std": 0.03461900213238351,
+            "fold_aucs": [
+              0.7847222222222222,
+              0.8761111111111111,
+              0.821111111111111
+            ]
+          },
+          "jaccard5_inv_ecs": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "jaccard2_inv_ecs": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "all_features": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "mann_whitney_iod": {
+          "median_iod_near_dup": 20.2831045751634,
+          "median_iod_hard_neg": 81.76335678841534,
+          "mann_whitney_p": 3.819316529024651e-39,
+          "n_near_dup": 300,
+          "n_hard_neg": 300
+        },
+        "delta_auc_j2_plus_inv_ecs_vs_j2": {
+          "mean": 0.0,
+          "ci_lo": -1.1102230246251565e-16,
+          "ci_hi": 1.1102230246251565e-16
+        }
+      },
+      "boilerplate_benchmark": {
+        "cv_results_hard_subset": {
+          "jaccard5_only": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "jaccard2_only": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "inv_ecs_only": {
+            "auc_mean": 0.8071666666666667,
+            "auc_std": 0.03740807663501111,
+            "fold_aucs": [
+              0.8641666666666666,
+              0.7497222222222222,
+              0.7902777777777777
+            ]
+          },
+          "jaccard5_inv_ecs": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "jaccard2_inv_ecs": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "all_features": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "cv_results_all_labels": {
+          "jaccard5_only": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "jaccard2_only": {
+            "auc_mean": 1.0,
+            "auc_std": 7.021666937153402e-17,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "inv_ecs_only": {
+            "auc_mean": 0.8155277777777779,
+            "auc_std": 0.022969115065965873,
+            "fold_aucs": [
+              0.8463888888888889,
+              0.7984722222222221,
+              0.7833333333333333
+            ]
+          },
+          "jaccard5_inv_ecs": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "jaccard2_inv_ecs": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "all_features": {
+            "auc_mean": 1.0,
+            "auc_std": 0.0,
+            "fold_aucs": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "mann_whitney_iod": {
+          "median_iod_near_dup": 20.2831045751634,
+          "median_iod_hard_neg": 80.9199817131022,
+          "mann_whitney_p": 4.087739755458809e-39,
+          "n_near_dup": 300,
+          "n_hard_neg": 300
+        },
+        "delta_auc_j2_plus_inv_ecs_vs_j2": {
+          "mean": -1.6653345369377348e-19,
+          "ci_lo": -1.1102230246251565e-16,
+          "ci_hi": 1.1102230246251565e-16
+        }
+      },
+      "key_findings": {
+        "inv_ecs_auc_wiki_hard": 0.8087222222222223,
+        "inv_ecs_auc_boilerplate_hard": 0.8071666666666667,
+        "wiki_j2_auc": 1.0,
+        "wiki_j2_plus_ecs_auc": 1.0,
+        "bp_j2_auc": 1.0,
+        "bp_j2_plus_ecs_auc": 1.0,
+        "delta_auc_boilerplate_mean": -1.6653345369377348e-19,
+        "delta_auc_boilerplate_ci_lo": -1.1102230246251565e-16,
+        "delta_auc_boilerplate_ci_hi": 1.1102230246251565e-16,
+        "hypothesis_confirmed": false,
+        "wiki_mw_p": 3.819316529024651e-39,
+        "bp_mw_p": 4.087739755458809e-39
+      }
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "wiki_benchmark",
+      "examples": [
+        {
+          "input": "{\"text_a\": \"A big band (historically referred to as jazz orchestra) is a type of musical ensemble of jazz music that usually consists of ten or more musicians with four sections: saxophones, trumpets,...",
+          "output": "near_duplicate",
+          "metadata_label": "near_duplicate",
+          "metadata_fold": 0,
+          "metadata_jaccard_5gram": 0.5453,
+          "metadata_jaccard_2gram": 0.5579,
+          "metadata_inv_ecs": 0.0452,
+          "metadata_ecs_iod": 21.1419,
+          "metadata_longest_run_frac": 0.437,
+          "metadata_edit_count_norm": 0.010481,
+          "predict_jaccard5_only": "0.9943",
+          "predict_jaccard2_only": "0.9939",
+          "predict_inv_ecs_only": "0.4845",
+          "predict_jaccard5_inv_ecs": "0.9939",
+          "predict_jaccard2_inv_ecs": "0.9936",
+          "predict_all_features": "0.9968"
+        },
+        {
+          "input": "{\"text_a\": \"A coffee bean is a seed from the Coffea plant and the source for coffee. This fruit is often referred to as a coffee cherry, but unlike the cherry, which usually contains a single pit, it ...",
+          "output": "negative",
+          "metadata_label": "hard_negative",
+          "metadata_fold": 0,
+          "metadata_jaccard_5gram": 0.0,
+          "metadata_jaccard_2gram": 0.0069,
+          "metadata_inv_ecs": 0.0111,
+          "metadata_ecs_iod": 89.1067,
+          "metadata_longest_run_frac": 0.0037,
+          "metadata_edit_count_norm": 0.017846,
+          "predict_jaccard5_only": "0.0116",
+          "predict_jaccard2_only": "0.0095",
+          "predict_inv_ecs_only": "0.374",
+          "predict_jaccard5_inv_ecs": "0.0107",
+          "predict_jaccard2_inv_ecs": "0.0088",
+          "predict_all_features": "0.0034"
+        },
+        {
+          "input": "{\"text_a\": \"The Human Brain Project (HBP) was a EU scientific research project that ran for ten years from 2013 to 2023, with a total budget of \\u20ac1 billion. Using high-performance exascale superco...",
+          "output": "excluded",
+          "metadata_label": "random",
+          "metadata_fold": 1,
+          "metadata_jaccard_5gram": 0.0,
+          "metadata_jaccard_2gram": 0.0163,
+          "metadata_inv_ecs": 0.0052,
+          "metadata_ecs_iod": 192.849,
+          "metadata_longest_run_frac": 0.0024,
+          "metadata_edit_count_norm": 0.019701,
+          "predict_jaccard5_only": "0.0117",
+          "predict_jaccard2_only": "0.0113",
+          "predict_inv_ecs_only": "0.3666",
+          "predict_jaccard5_inv_ecs": "0.0107",
+          "predict_jaccard2_inv_ecs": "0.0104",
+          "predict_all_features": "0.0031"
+        }
+      ]
+    },
+    {
+      "dataset": "boilerplate_benchmark",
+      "examples": [
+        {
+          "input": "{\"text_a\": \"A big band (historically referred to as jazz orchestra) is a type of musical ensemble of jazz music that usually consists of ten or more musicians with four sections: saxophones, trumpets,...",
+          "output": "near_duplicate",
+          "metadata_label": "near_duplicate",
+          "metadata_fold": 0,
+          "metadata_jaccard_5gram": 0.5453,
+          "metadata_jaccard_2gram": 0.5579,
+          "metadata_inv_ecs": 0.0452,
+          "metadata_ecs_iod": 21.1419,
+          "metadata_longest_run_frac": 0.437,
+          "metadata_edit_count_norm": 0.010481,
+          "predict_jaccard5_only": "0.9957",
+          "predict_jaccard2_only": "0.9954",
+          "predict_inv_ecs_only": "0.4975",
+          "predict_jaccard5_inv_ecs": "0.9955",
+          "predict_jaccard2_inv_ecs": "0.9953",
+          "predict_all_features": "0.9978"
+        },
+        {
+          "input": "{\"text_a\": \"Architecture is the study and practice of designing structures, especially habitable ones. It utilizes civil engineering techniques, but is considered a visual art. It is both the process ...",
+          "output": "near_duplicate",
+          "metadata_label": "near_duplicate",
+          "metadata_fold": 1,
+          "metadata_jaccard_5gram": 0.6288,
+          "metadata_jaccard_2gram": 0.6693,
+          "metadata_inv_ecs": 0.0454,
+          "metadata_ecs_iod": 21.0388,
+          "metadata_longest_run_frac": 0.5629,
+          "metadata_edit_count_norm": 0.008095,
+          "predict_jaccard5_only": "0.9992",
+          "predict_jaccard2_only": "0.9996",
+          "predict_inv_ecs_only": "0.49",
+          "predict_jaccard5_inv_ecs": "0.9992",
+          "predict_jaccard2_inv_ecs": "0.9995",
+          "predict_all_features": "0.9999"
+        },
+        {
+          "input": "{\"text_a\": \"Neoclassical architecture, sometimes referred to as Classical Revival architecture, is an architectural style produced by the Neoclassical movement that began in the mid-18th century in It...",
+          "output": "near_duplicate",
+          "metadata_label": "near_duplicate",
+          "metadata_fold": 2,
+          "metadata_jaccard_5gram": 0.5699,
+          "metadata_jaccard_2gram": 0.5863,
+          "metadata_inv_ecs": 0.0251,
+          "metadata_ecs_iod": 38.9111,
+          "metadata_longest_run_frac": 0.54,
+          "metadata_edit_count_norm": 0.011036,
+          "predict_jaccard5_only": "0.997",
+          "predict_jaccard2_only": "0.997",
+          "predict_inv_ecs_only": "0.4126",
+          "predict_jaccard5_inv_ecs": "0.9966",
+          "predict_jaccard2_inv_ecs": "0.9966",
+          "predict_all_features": "0.9992"
+        }
+      ]
+    }
+  ]
+}

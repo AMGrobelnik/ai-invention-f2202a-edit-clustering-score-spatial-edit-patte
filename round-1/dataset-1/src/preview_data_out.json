@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "source": "Wikipedia text pairs (synthetic)",
+    "description": "900 labeled text pairs: near_duplicate (splice edit), hard_negative (same category), random (different categories)",
+    "n_pairs": 900,
+    "classes": [
+      "near_duplicate",
+      "hard_negative",
+      "random"
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "wikipedia_text_pairs",
+      "examples": [
+        {
+          "input": "{\"text_a\": \"A big band (historically referred to as jazz orchestra) is a type of musical ensemble of jazz music that usually consists of ten or more musicians with four sections: saxophones, trumpets,...",
+          "output": "near_duplicate",
+          "metadata_pair_id": "nd_296",
+          "metadata_fold": 0,
+          "metadata_label": "near_duplicate",
+          "metadata_jaccard_5gram": 0.5474,
+          "metadata_word_count_a": 800,
+          "metadata_word_count_b": 800,
+          "metadata_category": "arts",
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 3,
+          "metadata_splice_start_pct": 0.439,
+          "metadata_splice_length_pct": 0.287
+        },
+        {
+          "input": "{\"text_a\": \"A coffee bean is a seed from the Coffea plant and the source for coffee. This fruit is often referred to as a coffee cherry, but unlike the cherry, which usually contains a single pit, it ...",
+          "output": "hard_negative",
+          "metadata_pair_id": "hn_101",
+          "metadata_fold": 0,
+          "metadata_label": "hard_negative",
+          "metadata_jaccard_5gram": 0.0,
+          "metadata_word_count_a": 800,
+          "metadata_word_count_b": 800,
+          "metadata_category": "nature",
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 3
+        },
+        {
+          "input": "{\"text_a\": \"The Human Brain Project (HBP) was a EU scientific research project that ran for ten years from 2013 to 2023, with a total budget of \\u20ac1 billion. Using high-performance exascale superco...",
+          "output": "random",
+          "metadata_pair_id": "rnd_082",
+          "metadata_fold": 1,
+          "metadata_label": "random",
+          "metadata_jaccard_5gram": 0.0,
+          "metadata_word_count_a": 800,
+          "metadata_word_count_b": 800,
+          "metadata_category": "mixed",
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 3
+        }
+      ]
+    }
+  ]
+}

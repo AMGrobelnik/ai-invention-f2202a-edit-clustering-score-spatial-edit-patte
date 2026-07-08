@@ -1,0 +1,20 @@
+{
+  "title": "Wikipedia Boilerplate Hard-Negative Benchmark",
+  "layman_summary": "900 Wikipedia text pairs testing whether similarity methods can see through shared legal boilerplate headers: near-duplicates, boilerplate hard-negatives, and random pairs with 5-fold CV labels.",
+  "summary": "Built from Wikipedia API (zero cost, no LLM calls): 900 text pairs balanced across 3 classes.\n\nNEAR-DUPLICATE (300 pairs): Original Wikipedia article A + splice version where 20-30% of words are replaced by a contiguous block from an unrelated donor article B. 5-gram Jaccard mean=0.582, range [0.50, 0.75] — high overlap due to preserved majority.\n\nBOILERPLATE-HARD-NEGATIVE (300 pairs): Two completely unrelated Wikipedia articles C and D, each prepended with an identical ~300-400-word CC-BY-SA license/disclaimer block. 5-gram Jaccard mean=0.465, range [0.25, 0.61] — critically in the non-ceiling regime targeted by [0.25, 0.65]. boilerplate_frac mean≈0.83 indicating most shared signal comes from the header. This class is the key challenge: high Jaccard from shared boilerplate, but articles are semantically unrelated — a naive Jaccard-based detector would mis-classify these as near-duplicates.\n\nRANDOM (300 pairs): Two unrelated Wikipedia articles with no boilerplate. 5-gram Jaccard mean=0.000, range [0.00, 0.002] — trivially distinguishable.\n\nFields per example: pair_id (int), text_a (str), text_b (str), label (str), fold (int 0-4 for 5-fold CV), jaccard_5gram (float), jaccard_2gram (float), boilerplate_frac (float).\n\nThe dataset directly tests the core hypothesis: whether an ECS (ensemble/combined similarity) method can distinguish boilerplate-hard-negatives from true near-duplicates, which requires recognizing that shared n-grams concentrated in a boilerplate header are not evidence of document-level similarity. The non-ceiling Jaccard regime [0.25, 0.65] for the hard-negative class ensures the task is not trivially solvable by a Jaccard threshold.\n\nAll 900 pairs have 5-fold CV assignments (fold 0-4), enabling proper cross-validation. Dataset size: 6.9MB. Built from ~195 cached Wikipedia articles fetched via MediaWiki API with proper User-Agent headers.",
+  "out_expected_files": {
+    "script": "data.py",
+    "datasets": [
+      {
+        "full": ["full_data_out.json"],
+        "mini": "mini_data_out.json",
+        "preview": "preview_data_out.json"
+      }
+    ]
+  },
+  "upload_ignore_regexes": [
+    "(^|/)temp/article_cache/",
+    "(^|/)temp/datasets/",
+    "(^|/)logs/"
+  ]
+}

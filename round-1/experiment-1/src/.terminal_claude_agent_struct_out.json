@@ -1,0 +1,15 @@
+{
+  "title": "Edit Clustering Score vs Jaccard for Near-Duplicates",
+  "layman_summary": "Tests whether measuring how clustered text edits are improves detection of near-duplicate documents — Jaccard alone is already perfect, but ECS provides strong standalone signal (AUC=0.97) on 900 synthetic pairs.",
+  "summary": "EXPERIMENT: Edit Clustering Score (ECS) vs Jaccard-only vs combined classifiers for near-duplicate text detection on 900 synthetic pairs (300 near-dup + 300 hard-neg + 300 random). METHOD: ECS = Index of Dispersion (var/mean) of inter-edit-gap positions from word-level LCS diff. Near-duplicates constructed by splicing a single contiguous 20-40% word block from a different article into a base article. Hard negatives = same-category article pairs; random negatives = cross-category pairs. Synthetic articles generated from 5 topic-specific vocabularies (politics/sports/science/business/technology, 60 words each, 300-word articles). FEATURES: 5-gram Jaccard (k=5 word shingles), ECS (IoD), edit_count_norm, edit_span_frac, longest_run_frac. EVALUATION: 4 classifier variants (jaccard_only, ecs_only, jaccard_ecs, all_features) with 5-fold stratified CV and logistic regression; Mann-Whitney U test for ECS direction; hard-negative-only AUC; Precision@80%-recall. FULL RUN RESULTS (n=3000 articles, 300 pairs/class): jaccard_only AUC=1.000, ecs_only AUC=0.973±0.006, jaccard_ecs AUC=1.000, all_features AUC=1.000. Delta_AUC(combined-jaccard)=0.000. MW p=1.0 (ECS directionally INVERTED: near-dups have LOWER IoD than negatives because a single contiguous splice produces few clustered edit positions, not scattered ones). VERDICT: DISCONFIRMED — 5-gram Jaccard is a perfect ceiling classifier for this synthetic dataset; ECS captures real but redundant signal. Key insight: contiguous splices preserve k-grams in unchanged regions (Jaccard~0.5-0.7) while scattered edits destroy most k-grams (Jaccard~0), making Jaccard inherently sensitive to edit locality in ways that leave no room for ECS. ECS-only (0.97 AUC) demonstrates the structural signal is real but complementarity requires scenarios where Jaccard is weaker (e.g., with bigram Jaccard or natural-language corpora with boilerplate phrase overlap).",
+  "out_expected_files": {
+    "script": "method.py",
+    "full_output": "full_method_out.json",
+    "mini_output": "mini_method_out.json",
+    "preview_output": "preview_method_out.json"
+  },
+  "upload_ignore_regexes": [
+    "(^|/)logs/",
+    "(^|/)\\.venv/"
+  ]
+}

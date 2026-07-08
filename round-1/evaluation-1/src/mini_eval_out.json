@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "evaluation_name": "ECS vs Jaccard Stats Validation",
+    "n_pairs": 900,
+    "n_hard_subset": 600,
+    "bootstrap_B": 2000,
+    "pairs_per_class": 300,
+    "length_strata_aucs": [
+      {
+        "bucket": "<200",
+        "n": 23,
+        "auc_jaccard": 1.0,
+        "auc_combined": 0.15789473684210525
+      },
+      {
+        "bucket": "200-500",
+        "n": 63,
+        "auc_jaccard": 1.0,
+        "auc_combined": 0.3055555555555556
+      },
+      {
+        "bucket": ">500",
+        "n": 514,
+        "auc_jaccard": 1.0,
+        "auc_combined": 0.09381685759805782
+      }
+    ],
+    "confusion_jaccard": {
+      "threshold": 0.46680716543730244,
+      "precision": 1.0,
+      "recall": 0.8,
+      "tp": 240,
+      "fp": 0,
+      "fn": 60,
+      "tn": 300
+    },
+    "confusion_combined": {
+      "threshold": 2.708087439578674,
+      "precision": 0.45368620037807184,
+      "recall": 0.8,
+      "tp": 240,
+      "fp": 289,
+      "fn": 60,
+      "tn": 11
+    },
+    "verdict_auc_improvement": "DISCONFIRMED",
+    "verdict_ecs_alone": "DISCONFIRMED",
+    "verdict_iod_ratio": "DISCONFIRMED",
+    "verdict_overall": "DISCONFIRMED",
+    "narrative": "ECS (Index of Dispersion of inter-edit gaps) was evaluated against Jaccard 5-gram similarity on 600 near-duplicate vs hard-negative Wikipedia pairs. (1) AUC improvement: Jaccard=1.000, Jaccard+ECS=0.118, delta=-0.882 (95% CI [-0.909,-0.854]) → DISCONFIRMED. (2) ECS-alone AUC=0.106 → DISCONFIRMED. (3) Median IoD ratio=0.25 (ndup=15.077, hneg=59.667), Mann-Whitney p=1.000e+00, Cohen's d=-0.83 → DISCONFIRMED. Precision at 80% recall: Jaccard=1.000, Combined=0.454 (gain=-0.546). Overall: DISCONFIRMED."
+  },
+  "metrics_agg": {
+    "auc_jaccard": 1.0,
+    "auc_ecs_jaccard": 0.117789,
+    "auc_ecs_only": 0.105889,
+    "delta_auc": -0.882211,
+    "delta_auc_ci_low": -0.909447,
+    "delta_auc_ci_high": -0.853611,
+    "median_iod_ndup": 15.077086,
+    "median_iod_hardneg": 59.666731,
+    "iod_ratio": 0.252688,
+    "mannwhitney_p": 1.0,
+    "cohens_d_log_iod": -0.825149,
+    "precision_gain_at_80_recall": -0.546314,
+    "n_confirmed": 0.0,
+    "n_partial": 0.0
+  },
+  "datasets": [
+    {
+      "dataset": "wikipedia_near_dup_eval",
+      "examples": [
+        {
+          "input": "pair_type=hard_neg avg_words=700",
+          "output": "0",
+          "predict_jaccard": "0.0",
+          "predict_combined": "18.21935",
+          "predict_ecs": "60.731167",
+          "eval_label": 0.0,
+          "eval_jaccard": 0.0,
+          "eval_ecs": 60.73116719728868,
+          "eval_combined": 18.219350159186604,
+          "metadata_pair_type": "hard_neg",
+          "metadata_avg_words": 700,
+          "metadata_length_bucket": ">500"
+        },
+        {
+          "input": "pair_type=random avg_words=700",
+          "output": "0",
+          "predict_jaccard": "0.0",
+          "predict_combined": "11.84389",
+          "predict_ecs": "39.479633",
+          "eval_label": 0.0,
+          "eval_jaccard": 0.0,
+          "eval_ecs": 39.47963313360665,
+          "eval_combined": 11.843889940081993,
+          "metadata_pair_type": "random",
+          "metadata_avg_words": 700,
+          "metadata_length_bucket": ">500"
+        },
+        {
+          "input": "pair_type=random avg_words=441",
+          "output": "0",
+          "predict_jaccard": "0.0",
+          "predict_combined": "35.476659",
+          "predict_ecs": "118.255531",
+          "eval_label": 0.0,
+          "eval_jaccard": 0.0,
+          "eval_ecs": 118.25553080920567,
+          "eval_combined": 35.4766592427617,
+          "metadata_pair_type": "random",
+          "metadata_avg_words": 441,
+          "metadata_length_bucket": "200-500"
+        }
+      ]
+    }
+  ]
+}
